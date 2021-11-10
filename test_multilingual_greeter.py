@@ -6,6 +6,7 @@ import multilingual_greeter
 
 class MultilingualGreeterTest(TestCase):
 
+
     @patch('sys.stdout', new_callable=StringIO)
     def test_print_language_options(self, stdout_mock):
         languages = {

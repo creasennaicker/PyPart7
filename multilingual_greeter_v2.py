@@ -3,6 +3,10 @@ from typing import Dict
 # Populate this dictionary with at least two languages.
 # Use integers for keys and strings for values.
 # Example: Key = 1. Value = 'English'.
+
+
+
+
 lang_dict = {
     1: 'English',
     2: 'Spanish',
@@ -25,6 +29,26 @@ greetings_dict = {
     2: 'Hola',
     3: 'Olá'
 }
+
+def admin_or_user():
+    print("Admin or User?")
+    user_input = (input('Admin' or 'User')).lower
+
+    if user_input == 'Admin':
+        admin()
+
+    elif user_input == 'User':
+        user()
+
+    else:
+        print('Are you a robot?')
+
+    admin_or_user()
+
+
+
+
+
 
 
 def print_language_options(lang_options: Dict[int, str]) -> None:
